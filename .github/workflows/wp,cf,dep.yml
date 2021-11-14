@@ -1,0 +1,13 @@
+name: Powered by Wordpress, coffee and depression
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: 'Proudly powered by <a href="https://en-gb.wordpress.org/">WordPress</a>.'
+          replace: 'Proudly powered by <a href="https://en-gb.wordpress.org/">WordPress</a>, coffee and depression.'
+          regex: false
