@@ -9,5 +9,5 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v2
         with:
           find: 'Proudly powered by <a href="https://en-gb.wordpress.org/">WordPress</a>.'
-          replace: 'Proudly powered by <a href="https://en-gb.wordpress.org/">WordPress</a>, coffee and depression.'
+          replace: 'Proudly made with <a href="https://en-gb.wordpress.org/">WordPress</a>, coffee and depression.'
           regex: false
